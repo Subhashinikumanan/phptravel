@@ -84,21 +84,18 @@ public class SignUPStepDef extends BaseClass {
 	@When("User Click the capcha Button  in Sign Up Page")
 	public void user_click_the_capcha_button_in_sign_up_page() throws InterruptedException {
 		// Write code here that turns the phrase above into concrete actions
-		
+
 		Thread.sleep(4000);
-		clickonWebelement(s.getCapcha());
+	///	clickonWebelement(s.getCapcha());
 	}
 
 	@When("User Click the Sign Up Button  in Sign Up Page")
 	public void user_click_the_sign_up_button_in_sign_up_page() {
-		// Write code here that turns the phrase above into concrete actions
-
 		clickonWebelement(s.getSubmit());
 	}
 
 	@Then("User Verify the user is naviogated to signup success page with {string} displayed in the header")
 	public void user_verify_the_user_is_naviogated_to_signup_success_page_with_displayed_in_the_header(String string) {
-		// Write code here that turns the phrase above into concrete actions
 
 	}
 

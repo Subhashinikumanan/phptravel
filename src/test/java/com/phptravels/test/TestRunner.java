@@ -10,17 +10,14 @@ import org.openqa.selenium.WebDriver;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
-
-
-
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},	
 					features="features",
-					glue="steps",
+					glue="com.phptravels.Steps",
 					strict=true,
 					dryRun=false,
-					monochrome=true
-					)
+					monochrome=true,
+					tags= "@smoke")
 
 public class TestRunner {
 	
